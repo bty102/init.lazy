@@ -18,6 +18,7 @@ local plugins = {
     require('plugins.lualine'),
     require('plugins.telescope'),
     require('plugins.telescope-coc'),
+    require('plugins.vim-snippets'),
 }
 
 local config = {
