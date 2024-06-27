@@ -16,6 +16,14 @@ local plugins = {
     require('plugins.nvim-tree'),
     require('plugins.coc'),
     require('plugins.lualine'),
+    require('plugins.telescope'),
+    require('plugins.telescope-coc'),
 }
 
-require("lazy").setup(plugins)
+local config = {
+    checker = {
+        enabled = true,
+    }
+}
+
+require("lazy").setup(plugins, config)
