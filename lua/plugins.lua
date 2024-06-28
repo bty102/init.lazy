@@ -19,6 +19,7 @@ local plugins = {
     require('plugins.telescope'),
     require('plugins.telescope-coc'),
     require('plugins.vim-snippets'),
+    require('plugins.bufferline'),
 }
 
 local config = {
