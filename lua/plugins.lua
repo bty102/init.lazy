@@ -20,6 +20,8 @@ local plugins = {
     require('plugins.telescope-coc'),
     require('plugins.vim-snippets'),
     require('plugins.bufferline'),
+    require('plugins.nvim-treesitter'),
+    require('plugins.indent-blankline'),
 }
 
 local config = {
