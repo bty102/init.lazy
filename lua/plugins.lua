@@ -22,6 +22,8 @@ local plugins = {
     require('plugins.bufferline'),
     require('plugins.nvim-treesitter'),
     require('plugins.indent-blankline'),
+    require('plugins.nvim-notify'),
+    require('plugins.dressing'),
 }
 
 local config = {

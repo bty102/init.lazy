@@ -47,6 +47,7 @@
     // Preferences
     "coc.preferences.currentFunctionSymbolAutoUpdate": true,
     "coc.preferences.extensionUpdateCheck": "daily",
+    "coc.preferences.enableMessageDialog": true,
 
     // coc-sumneko-lua
     "sumneko-lua.enableNvimLuaDev": true,

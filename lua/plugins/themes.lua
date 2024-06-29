@@ -27,8 +27,11 @@ return {
                         return {
                             NvimTreeDiagnosticErrorIcon = { fg = mocha.red },
                             NvimTreeDiagnosticWarnIcon = { fg = mocha.yellow },
-                            NvimTreeDiagnosticInfoIcon = {fg = mocha.sapphire},
-                            NvimTreeDiagnosticHintIcon = {fg = mocha.teal},
+                            NvimTreeDiagnosticInfoIcon = { fg = mocha.sapphire },
+                            NvimTreeDiagnosticHintIcon = { fg = mocha.teal },
+                            CocNotificationWarning = { fg = mocha.yellow },
+                            CocNotificationInfo = { fg = mocha.sapphire },
+                            CocNotificationError = { fg = mocha.red },
                         }
                     end,
                 },
@@ -65,6 +68,7 @@ return {
                         scope_color = "", -- catppuccin color (eg. `lavender`) Default: text
                         colored_indent_levels = false,
                     },
+                    notify = true,
                 }
             })
             vim.cmd.colorscheme "catppuccin-mocha"
