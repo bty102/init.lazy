@@ -69,6 +69,10 @@ return {
                         colored_indent_levels = false,
                     },
                     notify = true,
+                    dropbar = {
+                        enabled = true,
+                        color_mode = true, -- enable color for kind's texts, not just kind's icons
+                    },
                 }
             })
             vim.cmd.colorscheme "catppuccin-mocha"

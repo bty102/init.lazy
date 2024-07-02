@@ -24,6 +24,9 @@ local plugins = {
     require('plugins.indent-blankline'),
     require('plugins.nvim-notify'),
     require('plugins.dressing'),
+    require('plugins.vim-floaterm'),
+    require('plugins.vim-commentary'),
+    require('plugins.dropbar'),
 }
 
 local config = {
