@@ -93,9 +93,27 @@ return {
             endfunction
 
             " notifications
-            autocmd User CocNvimInit call s:InitCoc()
-            autocmd User CocDiagnosticChange call s:DiagnosticNotify()
-            " autocmd User CocStatusChange call s:StatusNotify()
+            augroup notifications
+                au!
+                autocmd User CocNvimInit call s:InitCoc()
+                autocmd User CocDiagnosticChange call s:DiagnosticNotify()
+                autocmd User CocStatusChange call s:StatusNotify()
+            augroup END
+
+            " toggle notifications
+            function! ToggleNotifications()
+                if exists('#notifications#User')
+                    au! notifications
+                else                   
+                    augroup notifications
+                        au!
+                        autocmd User CocNvimInit call s:InitCoc()
+                        autocmd User CocDiagnosticChange call s:DiagnosticNotify()
+                        autocmd User CocStatusChange call s:StatusNotify()
+                    augroup END
+                endif
+            endfunction
+            nmap <F2> :call ToggleNotifications()<CR>
         ]])
     -- }}
     end
