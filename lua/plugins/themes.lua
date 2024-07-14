@@ -1,8 +1,26 @@
 return {
     {
+        'sainnhe/gruvbox-material',
+        lazy = false,
+        priority = 1000,
+        config = function()
+            -- Optionally configure and load the colorscheme
+            -- directly inside the plugin declaration.
+            vim.g.gruvbox_material_enable_italic = true
+            vim.opt.background = "dark"
+            vim.g.gruvbox_material_background = 'hard'
+            vim.g.gruvbox_material_disable_italic_comment = 1
+            vim.g.gruvbox_material_enable_bold = 1
+            vim.g.gruvbox_material_visual = 'reverse'
+            vim.g.gruvbox_material_diagnostic_text_highlight = 1
+            vim.g.gruvbox_material_inlay_hints_background = 'dimmed'
+            vim.cmd.colorscheme('gruvbox-material')
+        end
+    },
+    {
         "catppuccin/nvim",
         name = "catppuccin",
-        lazy = false,
+        lazy = true,
         priority = 1000,
         config = function()
             require("catppuccin").setup({
@@ -32,6 +50,11 @@ return {
                             CocNotificationWarning = { fg = mocha.yellow },
                             CocNotificationInfo = { fg = mocha.sapphire },
                             CocNotificationError = { fg = mocha.red },
+                            NotifyERRORTitle = { style = {} },
+                            NotifyWARNTitle = { style = {} },
+                            NotifyINFOTitle = { style = {} },
+                            FgCocWarningFloatBgCocFloating = { fg = "#f9e2af", bg = "#181825", style = {} },
+                            FgCocInfoFloatBgCocFloating = { fg = "#89dceb", bg = "#181825", style = {} }
                         }
                     end,
                 },

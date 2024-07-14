@@ -2,7 +2,7 @@
     // diagnostic
     "diagnostic.errorSign": "󰅙",
     "diagnostic.warningSign": "",
-    "diagnostic.hintSign": "󰰂",
+    "diagnostic.hintSign": "",
     "diagnostic.infoSign": "󰋽",
 
     // suggest

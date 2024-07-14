@@ -14,6 +14,7 @@ return {
             },
         })
         require('telescope').load_extension('coc')
+        require("telescope").load_extension("notify")
 
         local builtin = require('telescope.builtin')
         vim.keymap.set('n', '<space><space>', builtin.find_files, {})

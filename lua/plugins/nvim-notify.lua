@@ -6,7 +6,7 @@ return {
         ---------------------------------------
         
         vim.notify.setup({
-            render = "wrapped-compact",
+            render = "default",
             stages = "fade_in_slide_out",
             top_down = true,
         })
@@ -65,16 +65,16 @@ return {
                 endif
 
                 if get(l:info, 'error', 0)
-                    call add(l:msgs, ' Errors: ' . l:info['error'])
+                    call add(l:msgs, '🐛Errors: ' . l:info['error'])
                 endif
                 if get(l:info, 'warning', 0)
-                    call add(l:msgs, ' Warnings: ' . l:info['warning'])
+                    call add(l:msgs, '⚠️ Warnings: ' . l:info['warning'])
                 endif
                 if get(l:info, 'information', 0)
-                    call add(l:msgs, ' Infos: ' . l:info['information'])
+                    call add(l:msgs, 'ℹ️ Infos: ' . l:info['information'])
                 endif
                 if get(l:info, 'hint', 0)
-                    call add(l:msgs, ' Hints: ' . l:info['hint'])
+                    call add(l:msgs, '💡Hints: ' . l:info['hint'])
                 endif
                 let l:msg = join(l:msgs, "\n")
                 if empty(l:msg) | let l:msg = ' All OK' | endif
