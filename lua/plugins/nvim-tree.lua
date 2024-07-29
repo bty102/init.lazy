@@ -6,6 +6,7 @@ return {
         "nvim-tree/nvim-web-devicons",
     },
     config = function()
+        local lsp_diagnostic_icons = require('lsp.icon').diagnostic
         require("nvim-tree").setup {
             renderer = {
                 highlight_git = "name",
@@ -20,10 +21,10 @@ return {
             diagnostics = {
                 enable = true,
                 icons = {
-                    hint = "",
-                    info = "󰋼",
-                    warning = "󰀦",
-                    error = "󰅙",
+                    hint = lsp_diagnostic_icons.Hint,
+                    info = lsp_diagnostic_icons.Info,
+                    warning = lsp_diagnostic_icons.Warn,
+                    error = lsp_diagnostic_icons.Error,
                 },
             },
         }

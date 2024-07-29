@@ -18,6 +18,7 @@ return {
                 "json",
                 "cpp",
                 "java",
+                "regex",
             },
             sync_install = false,
             highlight = { enable = true },

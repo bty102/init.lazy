@@ -6,8 +6,6 @@ return {
         require("bufferline").setup {
             options = {
                 style_preset = require('bufferline').style_preset.no_italic,
-                diagnostics = "coc",
-                diagnostics_update_in_insert = true,
                 offsets = {
                     {
                         filetype = "NvimTree",
@@ -16,6 +14,7 @@ return {
                         separator = true
                     }
                 },
+                diagnostics = "nvim_lsp",
             }
         }
     end

@@ -14,19 +14,23 @@ vim.opt.rtp:prepend(lazypath)
 local plugins = {
     require('plugins.themes'),
     require('plugins.nvim-tree'),
-    require('plugins.coc'),
     require('plugins.lualine'),
     require('plugins.telescope'),
-    require('plugins.telescope-coc'),
-    require('plugins.vim-snippets'),
     require('plugins.bufferline'),
     require('plugins.nvim-treesitter'),
     require('plugins.indent-blankline'),
-    require('plugins.nvim-notify'),
-    require('plugins.dressing'),
     require('plugins.vim-floaterm'),
     require('plugins.vim-commentary'),
     require('plugins.dropbar'),
+    require('plugins.nvim-lspconfig'),
+    require('plugins.nvim-cmp'),
+    require('plugins.lazydev'),
+    require('plugins.lspkind'),
+    require('plugins.noice'),
+    require('plugins.dressing'),
+    require('plugins.clangd_extensions'),
+    require('plugins.nvim-jdtls'),
+    require('plugins.mini-pairs'),
 }
 
 local config = {
